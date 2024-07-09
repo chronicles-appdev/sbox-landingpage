@@ -19,6 +19,13 @@ a {
   text-decoration: none;
 }
 
+.justify{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 a:hover {
   color: #4345ef;
   text-decoration: none;
@@ -162,12 +169,29 @@ h6 {
   padding: 0;
 }
 
+.download{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.custommargin{
+  margin-right: 5px;
+
+}
+.image{
+  margin-bottom: 10px;
+}
 .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
   align-items: center;
+}
+
+.help{
+  display: inline-block;
 }
 
 .navbar li {
@@ -429,10 +453,16 @@ h6 {
 
 #hero h1 {
   margin: 0 0 20px 0;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 56px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 989px) {
+  .hide-on-tablet {
+    display: none;
+  }
 }
 
 #hero h1 span {
